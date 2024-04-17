@@ -282,3 +282,4 @@ C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\WebAPI\obj\Debu
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\WebAPI\obj\Debug\net6.0\WebAPI.sourcelink.json

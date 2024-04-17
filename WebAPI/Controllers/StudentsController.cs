@@ -23,51 +23,85 @@ namespace WebAPI.Controllers
             _unitOfWork = unitOfWork;
         }
 
+        public class Pagination<T> where T : class
+        {
+            public IEnumerable<T> Items { get; set; }
+            public int TotalItems { get; set; }
+            public int PageIndex { get; set; }
+            public int PageSize { get; set; }
+        }
 
         // GET: api/students
         [HttpGet]
-        public ActionResult<IEnumerable<Student>> GetStudents()
+        public ActionResult<Pagination<Student>> GetStudents([FromQuery] int? groupId, [FromQuery] int? minBirthYear, [FromQuery] int? maxBirthYear, [FromQuery] int? pageSize, [FromQuery] int? pageIndex)
         {
-            var students = _unitOfWork.GetRepository<Student>().Get(null, null, s => s.Group).Select(s => new Student
+            var students = _unitOfWork.GetRepository<Student>()
+                    .FindByCondition(s =>
+                        (groupId == null || s.GroupId == groupId)
+                        && (minBirthYear == null || (s.DateOfBirth != null && s.DateOfBirth.Value.Year >= minBirthYear))
+                        && (maxBirthYear == null || (s.DateOfBirth != null && s.DateOfBirth.Value.Year <= maxBirthYear)),
+                        pageIndex,
+                        pageSize,
+                        s => s.Group)
+                    .Select(s => new Student
+                    {
+                        DateOfBirth = s.DateOfBirth,
+                        Email = s.Email,
+                        FullName = s.FullName,
+                        GroupId = s.GroupId,
+                        Group = new StudentGroup
+                        {
+                            Code = s.Group.Code,
+                            GroupName = s.Group.GroupName,
+                            Id = s.Group.Id
+                        }
+                    });
+
+            var total = _unitOfWork.GetRepository<Student>()
+                    .FindByCondition(s =>
+                        (groupId == null || s.GroupId == groupId)
+                        && (minBirthYear == null || (s.DateOfBirth != null && s.DateOfBirth.Value.Year >= minBirthYear))
+                        && (maxBirthYear == null || (s.DateOfBirth != null && s.DateOfBirth.Value.Year <= maxBirthYear)))
+                    .Count();
+
+            return new Pagination<Student>
             {
-                DateOfBirth = s.DateOfBirth,
-                Email = s.Email,
-                FullName = s.FullName,
-                GroupId = s.GroupId,
-                Group = new StudentGroup
-                {
-                    Code = s.Group.Code,
-                    GroupName = s.Group.GroupName,
-                    Id = s.Group.Id
-                }
-            });
-            return students.ToList();
+                Items = students.ToList(),
+                PageIndex = pageIndex ?? 1,
+                PageSize = pageSize ?? 10,
+                TotalItems = total
+            };
+        }
+
+        public class StudentDetail
+        {
+            public int Id { get; set; }
+            public string Email { get; set; }
+            public string FullName { get; set; }
+            public DateTime? DateOfBirth { get; set; }
+            public int? GroupId { get; set; }
+            public string GroupName { get; set; }
         }
 
         // GET: api/students/5
         [HttpGet("{id}")]
-        public ActionResult<Student> GetStudent(int id)
+        public ActionResult<StudentDetail> GetStudent(int id)
         {
             var student = _unitOfWork.GetRepository<Student>().FindByCondition(s => s.Id == id, s => s.Group).FirstOrDefault();
 
-            if (student == null)
+            if (student is null)
             {
                 return NotFound();
             }
 
-            return new Student
+            return new StudentDetail
             {
                 Id = student.Id,
                 Email = student.Email,
                 DateOfBirth = student.DateOfBirth,
                 FullName = student.FullName,
                 GroupId = student.GroupId,
-                Group = new StudentGroup
-                {
-                    Code = student.Group.Code,
-                    GroupName = student.Group.GroupName,
-                    Id = student.Group.Id
-                }
+                GroupName = student.Group.GroupName
             };
         }
 
@@ -88,19 +122,19 @@ namespace WebAPI.Controllers
         {
             var student = _unitOfWork.GetRepository<Student>().FindByCondition(s => s.Id == id, s => s.Group).FirstOrDefault();
 
-            if (student == null)
+            if (student is null)
             {
                 return NotFound();
             }
 
             // Email is unique
-            if (body.Email != null && _unitOfWork.GetRepository<Student>().FindByCondition(s => s.Email == body.Email && s.Id != id).FirstOrDefault() != null)
+            if (body.Email is not null && _unitOfWork.GetRepository<Student>().FindByCondition(s => s.Email == body.Email && s.Id != id).FirstOrDefault() is not null)
             {
                 return BadRequest("Email is already taken");
             }
 
             // GroupId exists
-            if (body.GroupId != null && _unitOfWork.GetRepository<StudentGroup>().FindByCondition(g => g.Id == body.GroupId).FirstOrDefault() == null)
+            if (body.GroupId is not null && _unitOfWork.GetRepository<StudentGroup>().FindByCondition(g => g.Id == body.GroupId).FirstOrDefault() is null)
             {
                 return BadRequest("Group does not exist");
             }
@@ -140,6 +174,7 @@ namespace WebAPI.Controllers
                 }
             });
         }
+
         public class StudentCreateDTO
         {
             [Required]
@@ -160,13 +195,13 @@ namespace WebAPI.Controllers
         public ActionResult<Student> PostStudent([FromBody] StudentCreateDTO body)
         {
             // Email is unique
-            if (_unitOfWork.GetRepository<Student>().FindByCondition(s => s.Email == body.Email).FirstOrDefault() != null)
+            if (_unitOfWork.GetRepository<Student>().FindByCondition(s => s.Email == body.Email).FirstOrDefault() is not null)
             {
                 return BadRequest("Email is already taken");
             }
 
             // GroupId exists
-            if (_unitOfWork.GetRepository<StudentGroup>().FindByCondition(g => g.Id == body.GroupId).FirstOrDefault() == null)
+            if (_unitOfWork.GetRepository<StudentGroup>().FindByCondition(g => g.Id == body.GroupId).FirstOrDefault() is null)
             {
                 return BadRequest("Group does not exist");
             }
@@ -209,7 +244,7 @@ namespace WebAPI.Controllers
         public IActionResult DeleteStudent(int id)
         {
             var student = _unitOfWork.GetRepository<Student>().FindByCondition(s => s.Id == id).FirstOrDefault();
-            if (student == null)
+            if (student is null)
             {
                 return NotFound();
             }
@@ -222,7 +257,7 @@ namespace WebAPI.Controllers
 
         private bool ValidateStudent(Student student)
         {
-            if (student.DateOfBirth == null || student.FullName == null || student.Email == null || student.GroupId == null)
+            if (student.DateOfBirth is null || student.FullName is null || student.Email is null || student.GroupId is null)
             {
                 return false;
             }

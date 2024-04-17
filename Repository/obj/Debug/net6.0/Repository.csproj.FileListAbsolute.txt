@@ -13,3 +13,4 @@ C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\Repository\obj\
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\Repository\obj\Debug\net6.0\refint\Repository.dll
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\Repository\obj\Debug\net6.0\Repository.pdb
 C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\Repository\obj\Debug\net6.0\ref\Repository.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\Repository\obj\Debug\net6.0\Repository.sourcelink.json
