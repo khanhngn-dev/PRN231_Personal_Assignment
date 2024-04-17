@@ -1,0 +1,14 @@
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\bin\Debug\net6.0\BusinessObjects.deps.json
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\bin\Debug\net6.0\BusinessObjects.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\bin\Debug\net6.0\BusinessObjects.pdb
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfo.cs
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjects.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\bin\Debug\net6.0\BusinessObjects.runtimeconfig.json
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+C:\Users\jerry\codes\prn231\PRN231PE_SU23_PracticalExam_SE170408\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
