@@ -1,7 +1,12 @@
 ﻿using BusinessObjects;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Tokens;
 using Repositorty.UnitOfWork;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace WebAPI.Controllers
 {
@@ -10,9 +15,11 @@ namespace WebAPI.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public AuthenticationController(IUnitOfWork unitOfWork)
+        private readonly IConfiguration _configuration;
+        public AuthenticationController(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             _unitOfWork = unitOfWork;
+            _configuration = configuration;
         }
 
         public class UserLogin
@@ -31,7 +38,33 @@ namespace WebAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status401Unauthorized);
             }
-            return Ok(user);
+
+            var token = GenerateJWTToken(user);
+
+            return Ok(token);
+        }
+
+        private string GenerateJWTToken(UserRole user)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new List<Claim>()
+            {
+                new Claim(Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+                new Claim(Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.Name, user.Username),
+                new Claim(ClaimTypes.Role, user.UserRole1.ToString())
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["JWT:Issuer"],
+                audience: _configuration["JWT:Issuer"],
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

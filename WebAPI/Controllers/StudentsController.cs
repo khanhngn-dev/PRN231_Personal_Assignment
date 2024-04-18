@@ -9,10 +9,13 @@ using BusinessObjects;
 using Repositorty.UnitOfWork;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers
 {
     [Route("api/students")]
+    // Staff role is 2
+    [Authorize(Roles = "2")]
     [ApiController]
     public class StudentsController : ControllerBase
     {
