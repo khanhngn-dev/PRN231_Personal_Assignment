@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\views\\login\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\login\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01298115-D4DA-4191-87A7-C6C5562C4C6F}|Repository\\Repository.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\repository\\baserepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01298115-D4DA-4191-87A7-C6C5562C4C6F}|Repository\\Repository.csproj|solutionrelative:repository\\baserepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\models\\studentdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\models\\studentdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\models\\paginationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\models\\paginationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}|WebApp\\WebApp.csproj|solutionrelative:webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CD79ECDB-6992-424D-8E46-F4B3F267CE56}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01298115-D4DA-4191-87A7-C6C5562C4C6F}|Repository\\Repository.csproj|c:\\users\\jerry\\codes\\prn231\\prn231pe_su23_practicalexam_se170408\\repository\\baserepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01298115-D4DA-4191-87A7-C6C5562C4C6F}|Repository\\Repository.csproj|solutionrelative:repository\\baserepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,91 +49,143 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 224,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 275,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:24:04.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\BaseRepository\\Repository.cs",
-              "RelativeDocumentMoniker": "Repository\\BaseRepository\\Repository.cs",
-              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\BaseRepository\\Repository.cs",
-              "RelativeToolTip": "Repository\\BaseRepository\\Repository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwDEAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T16:56:52.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Students\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T17:14:45.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\StudentsController.cs",
               "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAIwBAAAAAWAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAUwH0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:50:12.537Z",
+              "WhenOpened": "2024-04-22T16:50:28.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\BaseRepository\\IRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\BaseRepository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\BaseRepository\\IRepository.cs",
-              "RelativeToolTip": "Repository\\BaseRepository\\IRepository.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBEAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T16:56:22.331Z",
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T16:58:40.362Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 176,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\Program.cs",
-              "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAiwCUAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T14:19:00.598Z",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Login\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApp\\Views\\Login\\Error.cshtml",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Views\\Login\\Error.cshtml",
+              "RelativeToolTip": "WebApp\\Views\\Login\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T16:53:46.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA9wDIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:53:10.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentDetailModel.cs",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Models\\StudentDetailModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\Models\\StudentDetailModel.cs",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Models\\StudentDetailModel.cs",
+              "RelativeToolTip": "WebApp\\Models\\StudentDetailModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:52:43.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaginationModel.cs",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Models\\PaginationModel.cs",
+              "RelativeDocumentMoniker": "WebApp\\Models\\PaginationModel.cs",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Models\\PaginationModel.cs",
+              "RelativeToolTip": "WebApp\\Models\\PaginationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:52:43.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\appsettings.json",
+              "RelativeToolTip": "WebApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-22T16:52:09.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
               "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebAPI\\appsettings.json",
               "RelativeToolTip": "WebAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-17T14:18:58.418Z",
+              "WhenOpened": "2024-04-22T16:52:02.87Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 173,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "WebApp\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\WebApp\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "WebApp\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwCsAAACGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:52:44.61Z",
               "EditorCaption": ""
             }
           ]

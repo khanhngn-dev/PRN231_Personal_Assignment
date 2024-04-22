@@ -48,6 +48,7 @@ namespace WebAPI.Controllers
                         s => s.Group)
                     .Select(s => new Student
                     {
+                        Id = s.Id,
                         DateOfBirth = s.DateOfBirth,
                         Email = s.Email,
                         FullName = s.FullName,
@@ -162,19 +163,14 @@ namespace WebAPI.Controllers
                 return Problem(ex.Message);
             }
 
-            return CreatedAtAction("GetStudent", new { id = student.Id }, new Student
+            return CreatedAtAction("GetStudent", new { id = student.Id }, new StudentDetail
             {
                 Id = student.Id,
                 Email = student.Email,
                 DateOfBirth = student.DateOfBirth,
                 FullName = student.FullName,
                 GroupId = student.GroupId,
-                Group = new StudentGroup
-                {
-                    Code = student.Group.Code,
-                    GroupName = student.Group.GroupName,
-                    Id = student.Group.Id
-                }
+                GroupName = student.Group.GroupName
             });
         }
 
@@ -226,19 +222,14 @@ namespace WebAPI.Controllers
             _unitOfWork.GetRepository<Student>().Insert(student);
             _unitOfWork.Save();
 
-            return CreatedAtAction("GetStudent", new { id = student.Id }, new Student
+            return CreatedAtAction("GetStudent", new { id = student.Id }, new StudentDetail
             {
                 Id = student.Id,
                 Email = student.Email,
                 DateOfBirth = student.DateOfBirth,
                 FullName = student.FullName,
                 GroupId = student.GroupId,
-                Group = new StudentGroup
-                {
-                    Code = student.Group.Code,
-                    GroupName = student.Group.GroupName,
-                    Id = student.Group.Id
-                }
+                GroupName = student.Group.GroupName
             });
         }
 
@@ -275,6 +266,18 @@ namespace WebAPI.Controllers
                 return false;
             }
             return true;
+        }
+
+        // GET: api/students/groups
+        [HttpGet("groups")]
+        public ActionResult<IEnumerable<StudentGroup>> GetStudentGroups()
+        {
+            return _unitOfWork.GetRepository<StudentGroup>().Get().Select(g => new StudentGroup
+            {
+                Code = g.Code,
+                GroupName = g.GroupName,
+                Id = g.Id
+            }).ToList();
         }
     }
 }

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{78FBE278-7CEA-401E-8E46-6AE366B1B2DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{78FBE278-7CEA-401E-8E46-6AE366B1B2DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{01298115-D4DA-4191-87A7-C6C5562C4C6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{01298115-D4DA-4191-87A7-C6C5562C4C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{CD79ECDB-6992-424D-8E46-F4B3F267CE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{CD79ECDB-6992-424D-8E46-F4B3F267CE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CD79ECDB-6992-424D-8E46-F4B3F267CE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD79ECDB-6992-424D-8E46-F4B3F267CE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD79ECDB-6992-424D-8E46-F4B3F267CE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF24B0E-20CB-4788-BD4E-C038765DF0D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

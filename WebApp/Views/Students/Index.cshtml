@@ -1,0 +1,79 @@
+﻿@model PaginationModel<BusinessObjects.Student>
+@{
+    ViewData["Title"] = "Index";
+    var List = Model.Items.ToList();
+    var TotalItems = Model.TotalItems;
+    var PageSize = Model.PageSize;
+    var PageIndex = Model.PageIndex;
+    var TotalPage = (int)Math.Ceiling(TotalItems / (double)PageSize);
+    var groupId = Context.Request.Query["groupId"];
+    var minBirthYear = Context.Request.Query["minBirthYear"];
+    var maxBirthYear = Context.Request.Query["maxBirthYear"];
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form method="get" asp-action="Index" style="display:flex; flex-flow:column; gap:8px;">
+    <div style="display: flex; gap:8px;">
+        <label for="pageIndex">Current page</label><input id="pageIndex" name="pageIndex" value="@PageIndex" />
+        <label for="pageSize">Page size</label><input id="pageSize" name="pageSize" value="@PageSize" />
+    </div>
+    <div style="display: flex; gap: 8px;">
+        <label for="groupId">Group</label><input id="groupId" name="groupId" value="@groupId" />
+        <label for="minBirthYear">Min birthyear</label><input id="minBirthYear" name="minBirthYear" value="@minBirthYear" />
+        <label for="maxBirthYear">Max birthyear</label><input id="maxBirthYear" name="maxBirthYear" value="@maxBirthYear" />
+    </div>
+    <button style="width:max-content;" type="submit">Filter</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Email
+            </th>
+            <th>
+                Fullname
+            </th>
+            <th>
+                Date Of Birth
+            </th>
+            <th>
+                Group
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in List)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Group.Id)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @for (var i = 1; i <= TotalPage; i++)
+    {
+        <a asp-route-pageSize="@PageSize" asp-route-pageIndex="@i" asp-route-groupId="@groupId" asp-route-minBirthYear="@minBirthYear" asp-route-maxBirthYear="@maxBirthYear">@i</a>
+    }
+</div>
