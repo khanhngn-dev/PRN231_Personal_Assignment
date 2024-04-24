@@ -10,17 +10,15 @@
 			"name": "Authentication",
 			"item": [
 				{
-					"name": "Login as Staff (Success)",
+					"name": "Login (Failed)",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Login as Staff successfully\", () => {\r",
-									"    pm.expect(pm.response.code).eq(200);\r",
-									"})\r",
-									"const token = pm.response.text();\r",
-									"pm.collectionVariables.set(\"bearer\", token)"
+									"pm.test(\"Login with invalid credentials\", () => {\r",
+									"    pm.expect(pm.response.code).eq(401);\r",
+									"})"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -32,7 +30,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"staff\",\r\n    \"password\": \"staff@123\"\r\n}",
+							"raw": "{\r\n    \"username\": \"staff\",\r\n    \"password\": \"this_password_is_incorrect\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -59,7 +57,7 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Login as Staff successfully\", () => {\r",
+									"pm.test(\"Login as Admin successfully\", () => {\r",
 									"    pm.expect(pm.response.code).eq(200);\r",
 									"})\r",
 									"const token = pm.response.text();\r",
@@ -96,15 +94,17 @@
 					"response": []
 				},
 				{
-					"name": "Login (Failed)",
+					"name": "Login as Staff (Success)",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
 									"pm.test(\"Login as Staff successfully\", () => {\r",
-									"    pm.expect(pm.response.code).eq(401);\r",
-									"})"
+									"    pm.expect(pm.response.code).eq(200);\r",
+									"})\r",
+									"const token = pm.response.text();\r",
+									"pm.collectionVariables.set(\"bearer\", token)"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -116,7 +116,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"staff\",\r\n    \"password\": \"this_password_is_incorrect\"\r\n}",
+							"raw": "{\r\n    \"username\": \"staff\",\r\n    \"password\": \"staff@123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -350,7 +350,7 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Create a student\", () => {\r",
+									"pm.test(\"Update a student\", () => {\r",
 									"    pm.expect(pm.response.code).eq(200);\r",
 									"    const res = pm.response.json();\r",
 									"    pm.expect(res).has.property(\"fullName\");\r",
@@ -377,7 +377,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"A New Name\",\r\n    \"email\": \"a.ng@gmail.com\",\r\n    \"groupId\": 1,\r\n    \"dateOfBirth\": \"2002-02-19\"\r\n}",
+							"raw": "{\r\n    \"fullName\": \"A New Name\",\r\n    \"email\": \"a.ng@gmailcom\",\r\n    \"groupId\": 1,\r\n    \"dateOfBirth\": \"2002-02-19\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
