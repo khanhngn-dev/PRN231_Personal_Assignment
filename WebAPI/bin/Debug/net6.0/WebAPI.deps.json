@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "WebAPI/1.0.0": {
         "dependencies": {
-          "BusinessObjects": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.29",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.29",
@@ -2776,20 +2775,15 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "BusinessObjects/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.29",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
-          "Microsoft.Extensions.Configuration": "6.0.1",
-          "Microsoft.Extensions.Configuration.Json": "6.0.0"
-        },
-        "runtime": {
-          "BusinessObjects.dll": {}
-        }
-      },
       "Repository/1.0.0": {
         "dependencies": {
-          "BusinessObjects": "1.0.0"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.29",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -4461,11 +4455,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "BusinessObjects/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Repository/1.0.0": {
       "type": "project",

@@ -1,4 +1,5 @@
-using BusinessObjects;
+using Repositorty.Entities;
+using Repositorty.DBContext;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 

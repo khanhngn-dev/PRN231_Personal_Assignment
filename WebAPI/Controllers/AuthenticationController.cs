@@ -1,12 +1,13 @@
-﻿using BusinessObjects;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
+using Repositorty.Entities;
 using Repositorty.UnitOfWork;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using WebAPI.Models.Request;
 
 namespace WebAPI.Controllers
 {
@@ -22,21 +23,15 @@ namespace WebAPI.Controllers
             _configuration = configuration;
         }
 
-        public class UserLogin
-        {
-            public string Username { get; set; }
-            public string Password { get; set; }
-        }
-
         [HttpPost("login", Name = "Login")]
-        public IActionResult Login([FromBody] UserLogin userLogin)
+        public IActionResult Login([FromBody] LoginRequest body)
         {
-            var username = userLogin.Username;
-            var password = userLogin.Password;
+            var username = body.Username;
+            var password = body.Password;
             var user = _unitOfWork.GetRepository<UserRole>().FindByCondition(x => x.Username == username && x.Passphrase == password).FirstOrDefault();
             if (user == null)
             {
-                return StatusCode(StatusCodes.Status401Unauthorized);
+                return Unauthorized();
             }
 
             var token = GenerateJWTToken(user);

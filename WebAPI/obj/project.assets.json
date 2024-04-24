@@ -4166,27 +4166,17 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "BusinessObjects/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.29",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
-          "Microsoft.Extensions.Configuration": "6.0.1",
-          "Microsoft.Extensions.Configuration.Json": "6.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BusinessObjects.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BusinessObjects.dll": {}
-        }
-      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BusinessObjects": "1.0.0"
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.29",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
+          "Swashbuckle.AspNetCore": "6.5.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -11850,11 +11840,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "BusinessObjects/1.0.0": {
-      "type": "project",
-      "path": "../BusinessObjects/BusinessObjects.csproj",
-      "msbuildProject": "../BusinessObjects/BusinessObjects.csproj"
-    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -11863,7 +11848,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BusinessObjects >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.29",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.29",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.29",
@@ -11906,9 +11890,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\BusinessObjects\\BusinessObjects.csproj"
-            },
             "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\jerry\\codes\\prn231\\PRN231PE_SU23_PracticalExam_SE170408\\Repository\\Repository.csproj"
             }
